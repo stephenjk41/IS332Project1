@@ -1,0 +1,1 @@
+setInterval(function(active){imgTime},4000);
