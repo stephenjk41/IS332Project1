@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">SKKD</a>
@@ -27,6 +29,39 @@
             </ul>
         </div>
     </nav>
+    <div id="card_data">
+        <div class="card" style="width: 18rem;">
+            <img src="../assets/Kendrick.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">[[style]]</h5>
+                <p class="card-text">[[price]]</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
     
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="../scripts/jquery.miranda.min.js"></script>
+    <script>
+        var shoe_data = [
+            {
+                price: "$143 USD",
+                image: "../assets/Kendrick.jpg",
+                style: "Nike React Element 55 Kendrick Lamar SE",
+                sizes: [7, 8, 9, 10, 11, 12, 13]
+            },
+            {
+                price: "$143 USD",
+                image: "../assets/Kendrick.jpg",
+                style: "Nike React Element 55 Kendrick Lamar SE",
+                sizes: [7, 8, 9, 10, 11, 12, 13] 
+            }
+        ]
+        $("#card_data").mirandajs(shoe_data);
+    </script>
+
 </body>
+
 </html>
