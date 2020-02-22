@@ -8,6 +8,7 @@
     <title>SKKD Shoes</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/shop_style.css">
 </head>
 
 <body>
@@ -29,23 +30,37 @@
             </ul>
         </div>
     </nav>
-    <div id="card_data">
-        <div class="card" style="width: 18rem;">
-            <img src="../assets/Kendrick.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">[[style]]</h5>
-                <p class="card-text">[[price]]</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+    <!-- <div class="filter-wrapper">
+
+        <div class="form-group" style="margin-right: 20px;">
+            <label for="orderBy">Order By</label>
+            <select id="orderBy" name="orderBy">
+                <option value="published">Published</option>
+                <option value="style">Name</option>
+                <option value="_id">Article ID</option>
+            </select>
         </div>
-    </div>
-    
+
+        <div class="form-group">
+            <label for="published">Show Unpublished?</label>	
+            <select id="published" name="published">
+                <option value="true">True</option>
+                <option value="false">False</option>
+            </select>
+        </div>
+
+    </div> -->
+    <div id="card-result" class="wrapper"></div>
+    <div id="card-result2"></div>
+    <div id="card-result3"></div>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
+        <script src="../scripts/shop.js"></script>
     <script src="../scripts/jquery.miranda.min.js"></script>
-    <script>
-        var shoe_data = [
+    <!-- <script>
+        var shoe_data1 = [
             {
                 price: "$143 USD",
                 image: "../assets/Kendrick.jpg",
@@ -53,14 +68,42 @@
                 sizes: [7, 8, 9, 10, 11, 12, 13]
             },
             {
+                price: "$184 USD",
+                image: "../assets/Jordan 4.jpg",
+                style: "Jordan 4 Retro What the (GS)",
+                sizes: [1, 2, 3, 4, 5, 6]
+            },
+            {
+                price: "$169 USD",
+                image: "../assets/Jordan 1.jpg",
+                style: "Jordan New Beginnings Pack 1",
+                sizes: [7, 8, 9, 10, 11, 12, 13]
+            },
+
+        ]
+        var shoe_data2 = [
+        {
                 price: "$143 USD",
                 image: "../assets/Kendrick.jpg",
                 style: "Nike React Element 55 Kendrick Lamar SE",
-                sizes: [7, 8, 9, 10, 11, 12, 13] 
-            }
+                sizes: [7, 8, 9, 10, 11, 12, 13]
+            },
+            {
+                price: "$184 USD",
+                image: "../assets/Jordan 4.jpg",
+                style: "Jordan 4 Retro What the (GS)",
+                sizes: [1, 2, 3, 4, 5, 6]
+            },
+            {
+                price: "$169 USD",
+                image: "../assets/Jordan 1.jpg",
+                style: "Jordan New Beginnings Pack 1",
+                sizes: [7, 8, 9, 10, 11, 12, 13]
+            },
         ]
-        $("#card_data").mirandajs(shoe_data);
-    </script>
+        $("#card_data1").mirandajs(shoe_data1);
+        $("#card_data2").mirandajs(shoe_data2);
+    </script> -->
 
 </body>
 
