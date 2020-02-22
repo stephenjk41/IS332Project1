@@ -1,5 +1,39 @@
 .wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+    display: inline-grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 15px;
+    margin: 10px;
+
+  }
+  .footer {
+   
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: aliceblue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+
+}
+.pagination {
+    margin: auto;
+}
+
+@media (max-width: 1024px) {
+    .wrapper {
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+      }
+  }
+
+  @media (max-width: 700px) {
+    .wrapper {
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+      }
   }

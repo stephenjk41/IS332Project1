@@ -1,4 +1,5 @@
 var foo = 'foo';
+var checked = false;
 
 (function () {
 
@@ -162,11 +163,14 @@ var foo = 'foo';
         else    
             renderList(mockDatabase)
 		
-	}
+    }
 	// Change events trigger after the value of a form input changes
 	document.querySelector('#published').addEventListener('change', function(event){
 		// in this case value is a string that we need to convert to a boolean 
 		var value = event.target.value === 'true';
 		togglePublished(value);
-	});
+    });
+    
+    document.queryCommandValue('#soldout').addEventListener('')
+
 }) ();
