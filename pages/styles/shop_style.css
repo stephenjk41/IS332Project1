@@ -37,3 +37,11 @@
         grid-gap: 10px;
       }
   }
+  @media (max-width: 2100px) {
+    .wrapper {
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+      }
+  }

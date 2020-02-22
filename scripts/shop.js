@@ -79,9 +79,6 @@ var checked = false;
         console.log(results)
         var cards = [];
         results.forEach(test => {
-            
-           
-                
                 if(test.sizes.length == 0) {
                     cards.push('<div class="card" style="width: 18rem;"> <img src="' + test.image + '" class="card-img-top" alt="..."><div class="card-body"><h5 class="card-title">' + test.style + '</h5><p class="card-text">$' + test.price + ' USD</p><a href="#" class="btn btn-danger">Sold out</a></div></div>')
                 }
